@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+        "header header header"
+        "aside  section section"
+        "footer footer footer";
+}
+
+.one {
+    background-color: violet;
+    grid-area: header;
+    padding: 1rem;
+}
+
+.two {
+    background-color: pink;
+    grid-area: aside;
+    padding: 1rem;
+}
+
+.three {
+    background-color: lightblue;
+    grid-area: section;
+    padding: 1rem;
+}
+
+.four {
+    background-color: yellowgreen;
+    grid-area: footer;
+    padding: 1rem;
+}
